@@ -1,0 +1,5 @@
+outs:
+- md5: 1327ebf27d5a783dcea8042df97d51d2
+  size: 36584576
+  hash: md5
+  path: mobilenetv2.tflite
