@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clothing Classifier</title>
+</head>
+<body>
+    <h1>Upload Clothing Image</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction:</h2>
+        <p><strong>Label:</strong> {{ prediction.label }}</p>
+        <p><strong>Confidence:</strong> {{ prediction.confidence }}%</p>
+    {% endif %}
+</body>
+</html>
